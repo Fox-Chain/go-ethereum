@@ -554,7 +554,7 @@ func (c *Clique) Prepare(chain consensus.ChainHeaderReader, header *types.Header
 	}
 	header.Time = parent.Time + c.config.Period
 	if header.Time < uint64(time.Now().Unix()) {
-		header.Time = uint64(time.Now().Unix())
+	header.Time = uint64(time.Now().Unix())
 	}
 	return nil
 }
