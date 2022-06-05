@@ -13,6 +13,18 @@ https://camo.githubusercontent.com/915b7be44ada53c290eb157634330494ebe3e30a/6874
 
 Fox adapts the Go Ethereum to run as Layer 2 Sequencer. The codebase is based on v1.10.17.
 
+### Start the fox dev network
+
+```
+geth console --datadir data --keystore ./ --networkid 53077 --http --http.addr "0.0.0.0" --http.port "9545" --unlock 0x4e9d09bd897a580e0875b9c868ef0f5d318e9f78 --allow-insecure-unlock
+```
+
+To start the mining or send transactions:
+```
+> miner.start(1)
+> eth.sendTransaction({from:"0x4e9d09bd897a580e0875b9c868ef0f5d318e9f78", to:"0x4e9d09bd897a580e0875b9c868ef0f5d318e9f78", value:1e18})
+```
+
 ## Building the source
 
 For prerequisites and detailed build instructions please read the [Installation Instructions](https://geth.ethereum.org/docs/install-and-build/installing-geth).
