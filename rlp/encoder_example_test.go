@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/fox-chain/go-ethereum/rlp"
 )
 
 type MyCoolType struct {

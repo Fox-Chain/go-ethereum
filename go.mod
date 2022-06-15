@@ -1,4 +1,4 @@
-module github.com/ethereum/go-ethereum
+module github.com/fox-chain/go-ethereum
 
 go 1.17
 

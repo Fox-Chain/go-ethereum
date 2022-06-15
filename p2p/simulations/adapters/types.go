@@ -26,13 +26,13 @@ import (
 	"strconv"
 
 	"github.com/docker/docker/pkg/reexec"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/fox-chain/go-ethereum/crypto"
+	"github.com/fox-chain/go-ethereum/log"
+	"github.com/fox-chain/go-ethereum/node"
+	"github.com/fox-chain/go-ethereum/p2p"
+	"github.com/fox-chain/go-ethereum/p2p/enode"
+	"github.com/fox-chain/go-ethereum/p2p/enr"
+	"github.com/fox-chain/go-ethereum/rpc"
 	"github.com/gorilla/websocket"
 )
 
