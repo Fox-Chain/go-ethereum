@@ -99,6 +99,7 @@ var (
 	SnapshotStoragePrefix = []byte("o") // SnapshotStoragePrefix + account hash + storage hash -> storage trie value
 	CodePrefix            = []byte("c") // CodePrefix + code hash -> account code
 	skeletonHeaderPrefix  = []byte("S") // skeletonHeaderPrefix + num (uint64 big endian) -> header
+	blockResultPrefix     = []byte("T") // blockResultPrefix + hash -> blockResult
 
 	PreimagePrefix = []byte("secure-key-")       // PreimagePrefix + hash -> preimage
 	configPrefix   = []byte("ethereum-config-")  // config prefix for the db
@@ -250,4 +251,9 @@ func configKey(hash common.Hash) []byte {
 // genesisKey = genesisPrefix + hash
 func genesisKey(hash common.Hash) []byte {
 	return append(genesisPrefix, hash.Bytes()...)
+}
+
+// blockResultKey = blockResultPrefix + hash
+func blockResultKey(hash common.Hash) []byte {
+	return append(blockResultPrefix, hash.Bytes()...)
 }
